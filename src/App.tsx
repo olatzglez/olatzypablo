@@ -1,14 +1,17 @@
 import { BrowserRouter } from 'react-router-dom'
+import DateGate from './components/DateGate'
 import MainLayout from './layouts/MainLayout'
 import AppRouter from './router'
 
 function App() {
   return (
-    <BrowserRouter>
-      <MainLayout>
-        <AppRouter />
-      </MainLayout>
-    </BrowserRouter>
+    <DateGate>
+      <BrowserRouter>
+        <MainLayout>
+          <AppRouter />
+        </MainLayout>
+      </BrowserRouter>
+    </DateGate>
   )
 }
 
