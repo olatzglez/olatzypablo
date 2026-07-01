@@ -9,6 +9,7 @@ function Footer() {
           Olatz
         </a>
       </p>
+      <p>2026 © olatzypablo  </p>
     </footer>
   )
 }

@@ -3,8 +3,15 @@
   color: var(--color-bg);
   text-align: center;
   padding: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer a {
+  color: var(--color-bg-alt);
+}
+
+.footer a:hover {
   color: var(--color-bg);
 }
