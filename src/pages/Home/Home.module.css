@@ -11,3 +11,9 @@
   font-size: 48px;
   color: var(--color-primary);
 }
+
+.date {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
