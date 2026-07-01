@@ -1,0 +1,16 @@
+:root {
+  --color-bg: #fff;
+  --color-text: #2b2b2b;
+  --color-primary: #a98467;
+  --color-primary-light: #ddc6a5;
+  --color-accent: #6b705c;
+
+  --font-heading: 'Georgia', serif;
+  --font-body: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
