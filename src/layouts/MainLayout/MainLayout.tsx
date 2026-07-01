@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import Footer from '../../components/Footer'
 import styles from './MainLayout.module.css'
 
 type MainLayoutProps = {
@@ -9,6 +10,7 @@ function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className={styles.layout}>
       <main className={styles.content}>{children}</main>
+      <Footer />
     </div>
   )
 }
