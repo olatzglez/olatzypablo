@@ -1,12 +1,15 @@
 :root {
-  --color-bg: #fff;
-  --color-text: #2b2b2b;
-  --color-primary: #a98467;
-  --color-primary-light: #ddc6a5;
-  --color-accent: #6b705c;
+  --color-bg: #f3eedf;
+  --color-bg-alt: #d6cce0;
+  --color-text: #2c1b3b;
+  --color-primary: #2c1b3b;
+  --color-primary-light: #4a3363;
+  --color-accent: #7a3b1c;
+  --color-line: #c7b8d9;
 
-  --font-heading: 'Georgia', serif;
-  --font-body: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Abril Fatface', serif;
+  --font-heading: 'Elephant', 'Bodoni MT', 'Bodoni 72', serif;
+  --font-body: 'Century Gothic', 'Segoe UI', sans-serif;
 
   --spacing-xs: 4px;
   --spacing-sm: 8px;
