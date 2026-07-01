@@ -5,7 +5,7 @@ function Home() {
     <section className={styles.hero}>
       <h1>Olatz & Pablo</h1>
       <p className={styles.date}>25 · 07 · 2026</p>
-      <p>Página en construcción, hacer las cosas con mimo lleva tiempo.</p>
+      <p>Página en construcción,<br></br> hacer las cosas con mimo lleva tiempo.</p>
     </section>
   )
 }
