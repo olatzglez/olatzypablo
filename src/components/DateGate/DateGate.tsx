@@ -8,7 +8,7 @@ const ATTEMPTS_KEY = 'access-attempts'
 const LOCKED_UNTIL_KEY = 'access-locked-until'
 
 const MAX_ATTEMPTS = 3
-const LOCK_DURATION_MS = 60_000
+const LOCK_DURATION_MS = 5 * 60_000
 
 async function sha256Hex(text: string) {
   const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text))
@@ -82,6 +82,9 @@ function DateGate({ children }: DateGateProps) {
   }
 
   const secondsLeft = isLocked ? Math.ceil((lockedUntil - now) / 1000) : 0
+  const minutes = Math.floor(secondsLeft / 60)
+  const seconds = secondsLeft % 60
+  const timeLeft = minutes > 0 ? `${minutes}:${String(seconds).padStart(2, '0')} minutos` : `${seconds} segundos`
 
   return (
     <div className={styles.wrapper}>
@@ -101,7 +104,7 @@ function DateGate({ children }: DateGateProps) {
         )}
         {isLocked && (
           <p className={styles.error}>
-            Demasiados intentos. Vuelve a intentarlo en {secondsLeft} segundo{secondsLeft === 1 ? '' : 's'}.
+            Demasiados intentos. Vuelve a intentarlo en {timeLeft}.
           </p>
         )}
         <Button type="submit" disabled={isLocked}>
