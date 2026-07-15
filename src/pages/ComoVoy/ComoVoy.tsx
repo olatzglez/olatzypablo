@@ -8,10 +8,9 @@ function ComoVoy() {
       <h2>Bus</h2>
       <Card>
         <p>
-          Un bus saldrá de <strong>Moyua</strong> (Delegación de Hacienda) a las 12h y os dejará
-          en Finca Isasi, Gordexola. A las 01.00h saldrá de vuelta a Bilbao. El bus es gratuito y
-          no hace falta reservar plaza, pero os pedimos que seáis puntuales para que podamos
-          salir a tiempo.
+          Un bus saldrá de <strong>Moyua</strong> (Delegación de Hacienda) a las <strong>12h</strong> y os dejará
+          en Finca Isasi, Gordexola. A las <strong>01h</strong> saldrá de vuelta a Bilbao. El bus es gratuito y
+          no hace falta reservar plaza, pero os pedimos que seáis puntuales.
         </p>
       </Card>
 
