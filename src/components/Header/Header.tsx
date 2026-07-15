@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import styles from './Header.module.css'
 
 const links = [
-  { to: '/que-donde-y-cuando', label: 'Qué, dónde y cuándo' },
+  { to: '/que-donde-y-cuando', label: 'Qué, cuándo y dónde' },
   { to: '/como-voy', label: 'Cómo voy' },
   { to: '/la-pareja', label: 'La pareja' },
   { to: '/protocolo', label: 'Protocolo/Dresscode' },

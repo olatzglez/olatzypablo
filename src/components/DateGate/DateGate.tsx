@@ -81,11 +81,6 @@ function DateGate({ children }: DateGateProps) {
     return children
   }
 
-  const secondsLeft = isLocked ? Math.ceil((lockedUntil - now) / 1000) : 0
-  const minutes = Math.floor(secondsLeft / 60)
-  const seconds = secondsLeft % 60
-  const timeLeft = minutes > 0 ? `${minutes}:${String(seconds).padStart(2, '0')} minutos` : `${seconds} segundos`
-
   return (
     <div className={styles.wrapper}>
       <form className={styles.card} onSubmit={handleSubmit}>
@@ -104,7 +99,7 @@ function DateGate({ children }: DateGateProps) {
         )}
         {isLocked && (
           <p className={styles.error}>
-            Demasiados intentos. Vuelve a intentarlo en {timeLeft}.
+            Demasiados intentos. Vuelve a intentarlo más tarde.
           </p>
         )}
         <Button type="submit" disabled={isLocked}>
