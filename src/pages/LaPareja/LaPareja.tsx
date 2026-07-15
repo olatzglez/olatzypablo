@@ -1,8 +1,6 @@
-import styles from './LaPareja.module.css'
-
 function LaPareja() {
   return (
-    <section className={styles.page}>
+    <section className="page">
       <h1>La pareja</h1>
       <p>Página en construcción.</p>
     </section>

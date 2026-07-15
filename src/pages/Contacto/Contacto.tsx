@@ -1,8 +1,6 @@
-import styles from './Contacto.module.css'
-
 function Contacto() {
   return (
-    <section className={styles.page}>
+    <section className="page">
       <h1>Contacto</h1>
       <p>Página en construcción.</p>
     </section>

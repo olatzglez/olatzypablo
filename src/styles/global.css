@@ -21,6 +21,7 @@ body {
 h1 {
   font-family: var(--font-display);
   font-weight: 400;
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -28,6 +29,7 @@ h2,
 h3 {
   font-family: var(--font-heading);
   font-weight: 400;
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -36,6 +38,23 @@ p {
   line-height: 1.5;
 }
 
+a {
+  color: var(--color-accent);
+}
+
 #root {
   min-height: 100svh;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  text-align: center;
+  padding-bottom: var(--spacing-xl);
+}
+
+.page h2 {
+  margin-top: var(--spacing-md);
 }

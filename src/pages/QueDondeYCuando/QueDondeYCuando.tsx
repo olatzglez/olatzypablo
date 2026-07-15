@@ -1,3 +1,4 @@
+import Card from '../../components/Card'
 import styles from './QueDondeYCuando.module.css'
 
 const address = 'Barrio Zubiete, 53, BAJO, 48194 Zubiete, Biscay'
@@ -6,21 +7,21 @@ const mapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(address
 
 function QueDondeYCuando() {
   return (
-    <section className={styles.page}>
+    <section className="page">
       <h1>Qué, cuándo y dónde</h1>
 
       <h2>Qué</h2>
-      <div className={styles.card}>
+      <Card>
         <p>¡Nos casamos!</p>
-      </div>
+      </Card>
 
       <h2>Cuándo</h2>
-      <div className={styles.card}>
+      <Card>
         <p>25 de julio de 2026</p>
-      </div>
+      </Card>
 
       <h2>Dónde</h2>
-      <div className={styles.card}>
+      <Card>
         <p>Finca Isasi</p>
         <p>{address}</p>
         <iframe
@@ -33,7 +34,7 @@ function QueDondeYCuando() {
         <a href={mapsUrl} target="_blank" rel="noopener noreferrer">
           Cómo llegar
         </a>
-      </div>
+      </Card>
     </section>
   )
 }

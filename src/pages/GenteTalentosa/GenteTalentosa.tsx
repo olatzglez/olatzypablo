@@ -1,8 +1,6 @@
-import styles from './GenteTalentosa.module.css'
-
 function GenteTalentosa() {
   return (
-    <section className={styles.page}>
+    <section className="page">
       <h1>Nuestra gente talentosa</h1>
       <p>Página en construcción.</p>
     </section>

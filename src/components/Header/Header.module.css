@@ -59,7 +59,7 @@
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .toggle {
     display: flex;
   }

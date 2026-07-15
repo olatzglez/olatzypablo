@@ -1,8 +1,6 @@
-import styles from './Proveedores.module.css'
-
 function Proveedores() {
   return (
-    <section className={styles.page}>
+    <section className="page">
       <h1>Proveedores</h1>
       <p>Página en construcción.</p>
     </section>
